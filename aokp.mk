@@ -7,10 +7,6 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 # Inherit AOSP device configuration for anzu
 $(call inherit-product-if-exists, device/sony/pollux/full_pollux.mk)
 
-# Call KXP vendor to get unofficial additions
-BOOTLOGO_SIZE := 1200x1920
-$(call inherit-product, vendor/kxp/common_kxp.mk)
-
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_pollux
 PRODUCT_BRAND := Sony

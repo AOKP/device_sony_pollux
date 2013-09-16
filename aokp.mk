@@ -1,10 +1,7 @@
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
-# Inherit AOSP device configuration for anzu
+# Inherit AOSP device configuration for pollux
 $(call inherit-product-if-exists, device/sony/pollux/full_pollux.mk)
 
 # Setup device specific product configuration.
